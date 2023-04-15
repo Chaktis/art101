@@ -1,9 +1,20 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+h1 {
+  color: rgb(8, 91, 116);
+  font-size: 200%;
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+p {
+  font-family: "arial";
+  text-indent: 0px;
+  margin-left: 0px;
+}
+
+#content {
+  background-color: #110d7f;
+  width: 1460px;
+  min-height: 700px;
+  padding: 10px;
+  margin: 60px;
+  border: solid 6px #043e5d;
+  font-size: 20px;
+}
