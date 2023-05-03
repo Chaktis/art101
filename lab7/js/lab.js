@@ -1,21 +1,16 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - this lab is meant to learn how to use functions.
+// Author: Erin Casey
+// Date: 5/2/2023
 
-// Constants
 
 // Functions
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+// Sorts a name
+function nameSort() {
+  var userName = window.prompt("Please tell me your name:");
+  // splits string, sorts it, then joins it back together
+  var nameSorted = userName.split("").sort().join("");
+  return nameSorted;
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+document.writeln("I've fixed your name: ", nameSort(),"</br>")
