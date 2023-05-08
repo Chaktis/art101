@@ -1,21 +1,22 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Erin Casey
+// Date:5/8/2023
 
-// Constants
+//Variables
+var numArray = [1, 2, 3, 4];
 
-// Functions
+//Functions
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+function isEven(x){
+  return (x % 2 == 0);
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+console.log("Is 9 even? ", isEven(9));
+console.log("Is 10 even? ", isEven(10));
 
-// let's get this party started
-main();
+var result = numArray.map(isEven);
+console.log("The evenness of numArray: ", result);
+
+var resultsqrt = numArray.map(function(x){
+  return x ** 0.5
+})
+console.log("The square root of numArray: ", resultsqrt);
