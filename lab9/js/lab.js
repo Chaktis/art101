@@ -17,3 +17,5 @@ outputEl.appendChild(new2El);
 // changed elements
 new1El.style.fontSize = "30px";
 new2El.style.color = "purple";
+
+// yes
