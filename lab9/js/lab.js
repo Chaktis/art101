@@ -1,21 +1,19 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Erin Casey
+// Date: 5/10/2023
 
-// Constants
+// variables
+var outputEl = document.getElementById("output");
 
-// Functions
+var new1El = document.createElement("p");
+new1El.innerHTML = "This text has been changed!";
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+var new2El = document.createElement("p");
+new2El.innerHTML = "This text is different!";
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+outputEl.appendChild(new1El);
+outputEl.appendChild(new2El);
 
-// let's get this party started
-main();
+
+// changed elements
+new1El.style.fontSize = "30px";
+new2El.style.color = "purple";
