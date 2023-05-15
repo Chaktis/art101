@@ -1,21 +1,18 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Erin Casey
+// Date:5/15/23
 
-// Constants
+var button = document.getElementById("my-button");
 
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+// get name from the input
+button.addEventListener('click', function() {
+  inputValue = document.getElementById("user-name").value;
+  nameSort(inputValue);
+  });
+  
+// Sorts a name
+function nameSort(name) {
+  // splits string, sorts it, then joins it back together
+  var nameSorted = name.split("").sort().join("");
+  var newDiv = document.getElementById("output");
+  newDiv.innerHTML = nameSorted;
 }
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
