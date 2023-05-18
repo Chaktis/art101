@@ -1,21 +1,18 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Erin Casey
+// Date:5/17/23
 
-// Constants
+$('#challenges').append("<button id=buttonOne>This is a button!</button>");
+$('#problems').append("<button id=buttonTwo>This is another button!</button>");
+$('#results').append("<button id=buttonThree>Wow, a button!</button>");
 
-// Functions
+$("#buttonOne").click(function(){
+  $("#challenges").toggleClass("special");
+});
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+$("#buttonTwo").click(function(){
+  $("#problems").toggleClass("special");
+});
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+$("#buttonThree").click(function(){
+  $("#results").toggleClass("special");
+});
