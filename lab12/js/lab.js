@@ -1,21 +1,28 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Erin Casey
+// Date: 5/21/23
 
-// Constants
+// determines what house you get into 
+function sortingHat(name) {
+  nameVal = name.length % 4;
 
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+  if (nameVal == 0) {
+    return "Gryffindor"
+  } 
+  else if (nameVal == 1) {
+    return "Ravenclaw"
+  }
+  else if (nameVal == 2) {
+    return "Slytherin"
+  }
+  else if (nameVal == 3) {
+    return "Hufflepuff"
+  }
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
 
-// let's get this party started
-main();
+// get name from the input
+var button = document.getElementById("my-button");
+button.addEventListener('click', function() {
+  var name = document.getElementById("my-name").value;
+  document.getElementById("output").innerHTML = "<p>The sorting hat has sorted you into: " + sortingHat(name) + "</p>";
+  });
