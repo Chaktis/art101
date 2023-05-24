@@ -1,21 +1,31 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Erin Casey
+// Date:5/24/23
 
-// Constants
 
-// Functions
+for (i=1; i<=200; i++) {
+  var string = ""
+  if (i % 3 == 0) {
+    string += "Fizz";
+  }
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+  if (i % 5 == 0) {
+    string += "Buzz";
+  }
+
+  if (i % 7 == 0) {
+    string += "Boom";
+  }
+
+  if (string != "") {
+  string += "!<br>";
+  }
+
+  if (string == "") {
+    $("#output").append("<div>" + i);
+  } else {
+    $("#output").append("<div>" + string);
+  }
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
 
-// let's get this party started
-main();
+
